@@ -18,14 +18,29 @@
       h1 Student Directory
     div(class="app-container-inner")
       div(class="modify-container")
-        div(class="editor")
+        form(class="editor")
           h2 Directory Editor 
           div(class="choice-container")
-            h3 I want to: 
+            label I want to: 
             select
               option add a student 
               option edit a student
               option remove a student
+          div(class="input-container")
+            label Name:
+            input(type="text")
+            label Age:
+            input(type="text")
+            label Home Address:
+            input(type="text")
+            label GPA:
+            input(type="text")
+            label Major:
+            input(type="text")
+          div(class="submit-container")
+            button(type="submit") Submit Change
+            
+
       div(class="students-container")
         for student in students
           div(class="profile")
