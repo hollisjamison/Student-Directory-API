@@ -15,7 +15,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #dfe3ee;
 }
 
 .app-container header {
@@ -35,6 +34,7 @@
 .app-container header h1 {
   font-size: 2rem;
   color: white;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
@@ -50,15 +50,16 @@
 
 .app-container-inner .modify-container {
   width: 350px;
-  background-color: cyan;
+  background-color: #3d7dca;
 }
 
 .app-container-inner .students-container {
   width: 350px;
+  background-color: #dfe3ee;
 }
 
 .app-container-inner .students-container .profile {
-  margin: 2rem auto;
+  margin: 1rem auto 1rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,5 +93,13 @@
   padding: 0.1rem;
   font-size: 1rem;
   letter-spacing: 0.07rem;
+}
+
+.app-container-inner .students-container .profile .data-list .separation {
+  margin: 1.5rem auto 0 0;
+  height: 5px;
+  width: 250px;
+  background-color: white;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=styles.css.map */

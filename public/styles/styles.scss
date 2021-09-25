@@ -1,5 +1,5 @@
-$blue: #dfe3ee;
-$gray: #3d7dca;
+$gray: #dfe3ee;
+$blue: #3d7dca;
 
 * {
   margin: 0;
@@ -13,18 +13,18 @@ $gray: #3d7dca;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: $blue;
 
   header {
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $gray;
+    background-color: $blue;
 
     h1 {
       font-size: 2rem;
       color: white;
+      letter-spacing: 0.1rem;
       text-align: center;
     }
   }
@@ -35,14 +35,15 @@ $gray: #3d7dca;
 
     .modify-container {
       width: 350px;
-      background-color: cyan;
+      background-color: $blue;
     }
 
     .students-container {
       width: 350px;
+      background-color: $gray;
 
         .profile {
-          margin: 2rem auto;
+          margin: 1rem auto 1rem auto;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
@@ -67,6 +68,14 @@ $gray: #3d7dca;
             padding: 0.1rem;
             font-size: 1rem;
             letter-spacing: 0.07rem;
+          }
+
+          .separation {
+            margin: 1.5rem auto 0 0;
+            height: 5px;
+            width: 250px;
+            background-color: white;
+            border-radius: 8px;
           }
         }
       }
