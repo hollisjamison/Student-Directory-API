@@ -1,12 +1,16 @@
+const models = require('../models')
+
 const errorFunction = (req, res) => {
   res.status(404).send('ERROR CODE 404 PAGE NOT FOUND');
 };
 
-const getStudents = (req, res) => {
-  res.send('TEST This will be a list of all students');
+const getAllStudents = async (req, res) => {
+  const students = await models.Students.findAll()
+
+  return res.send(students)
 };
 
 module.exports = {
   errorFunction,
-  getStudents
+  getAllStudents
 }

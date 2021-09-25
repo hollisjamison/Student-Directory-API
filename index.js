@@ -1,13 +1,13 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const { errorFunction, getStudents } = require('./controllers/controller-students')
+const { errorFunction, getAllStudents } = require('./controllers/controller-students')
 
 const PORT = 1800
 const app = express()
 
 app.use(express.static('public'))
 
-app.get('/', getStudents)
+app.get('/', getAllStudents)
 
 app.get('*', errorFunction)
 
