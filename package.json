@@ -1,0 +1,19 @@
+{
+  "name": "student-directory",
+  "description": "A full CRUD REST API that retrieves a list of all students",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GioAceto/Student-Directory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GioAceto/Student-Directory/issues"
+  },
+  "homepage": "https://github.com/GioAceto/Student-Directory#readme"
+}
