@@ -5,6 +5,8 @@ const { errorFunction, getAllStudents, getMain } = require('./controllers/contro
 const PORT = 1800
 const app = express()
 
+app.set('view engine', 'pug')
+
 app.use(express.static('public'))
 
 app.get('/', getMain)
