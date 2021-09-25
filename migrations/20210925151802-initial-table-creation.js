@@ -10,6 +10,7 @@ module.exports = {
       address: { type: Sequelize.STRING },
       gpa: { type: Sequelize.FLOAT },
       major: { type: Sequelize.STRING },
+      image: { type: Sequelize.STRING },
       createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') },
       updatedAt: {
         type: Sequelize.DATE,
