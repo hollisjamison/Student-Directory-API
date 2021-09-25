@@ -86,7 +86,6 @@
 .app-container-inner .students-container .profile .data-list {
   margin: 0 auto;
   padding: 0.5rem;
-  width: 250px;
 }
 
 .app-container-inner .students-container .profile .data-list h3 {
@@ -98,7 +97,7 @@
 .app-container-inner .students-container .profile .data-list .separation {
   margin: 1.5rem auto 0 0;
   height: 5px;
-  width: 250px;
+  width: 260px;
   background-color: white;
   border-radius: 8px;
 }
