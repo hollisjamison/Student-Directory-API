@@ -11,7 +11,7 @@ module.exports = {
         address: 'Salem, MA',
         gpa: '3.70',
         major: 'Biochemistry',
-        image: 'pic1'
+        image: 'emily.svg'
       },
       {
         name: 'Fiona',
@@ -19,7 +19,7 @@ module.exports = {
         address: 'Providence, RI',
         gpa: '3.82',
         major: 'Psychology',
-        image: 'pic2'
+        image: 'fiona.svg'
       },
       {
         name: 'Travis',
@@ -27,7 +27,7 @@ module.exports = {
         address: 'Keene, NH',
         gpa: '3.50',
         major: 'Mechanical Engineering',
-        image: 'pic3'
+        image: 'travis.svg'
       },
       {
         name: 'Chloe',
@@ -35,7 +35,7 @@ module.exports = {
         address: 'Bridgeport, CT',
         gpa: '3.28',
         major: 'Political Science',
-        image: 'pic4'
+        image: 'chloe.svg'
       },
       {
         name: 'Maya',
@@ -43,7 +43,7 @@ module.exports = {
         address: 'Boston, MA',
         gpa: '3.80',
         major: 'Graphic Design',
-        image: 'pic5'
+        image: 'maya.svg'
       },
       {
         name: 'Michael',
@@ -51,7 +51,7 @@ module.exports = {
         address: 'Boston, MA',
         gpa: '3.70',
         major: 'Biology',
-        image: 'pic6'
+        image: 'michael.svg'
       },
       {
         name: 'Noah',
@@ -59,7 +59,7 @@ module.exports = {
         address: 'Portland, ME',
         gpa: '3.78',
         major: 'Civil Engineering',
-        image: 'pic7'
+        image: 'noah.svg'
       },
       {
         name: 'Sarah',
@@ -67,7 +67,7 @@ module.exports = {
         address: 'Beverly, MA',
         gpa: '4.00',
         major: 'Biology',
-        image: 'pic8'
+        image: 'sarah.svg'
       },
       {
         name: 'Scott',
@@ -75,15 +75,15 @@ module.exports = {
         address: 'Philadelphia, PA',
         gpa: '3.40',
         major: 'Accounting',
-        image: 'pic9'
+        image: 'scott.svg'
       },
       {
         name: 'Nadine',
         age: '19',
-        address: '',
+        address: 'Montreal, QC',
         gpa: '4.00',
         major: 'Biology',
-        image: 'pic10'
+        image: 'nadine.svg'
       },
       {
         name: 'Salim',
@@ -91,7 +91,7 @@ module.exports = {
         address: 'Boston, MA',
         gpa: '3.75',
         major: 'Physics',
-        image: 'pic11'
+        image: 'salim.svg'
       },
       {
         name: 'Caleb',
@@ -99,7 +99,7 @@ module.exports = {
         address: 'Anaheim, CA',
         gpa: '3.20',
         major: 'Accounting',
-        image: 'pic12'
+        image: 'caleb.svg'
       }
     ])
 

@@ -8,7 +8,7 @@ module.exports = {
       name: { type: Sequelize.STRING },
       age: { type: Sequelize.INTEGER },
       address: { type: Sequelize.STRING },
-      gpa: { type: Sequelize.FLOAT },
+      gpa: { type: Sequelize.DECIMAL(3, 2) },
       major: { type: Sequelize.STRING },
       image: { type: Sequelize.STRING },
       createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') },
