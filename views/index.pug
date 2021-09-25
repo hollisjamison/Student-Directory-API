@@ -24,10 +24,11 @@
           div(class="profile")
             h2= student.name
             img(class="avatar" src="/assets/" + student.image)
-            h3= student.age
-            h3= student.address
-            h3= student.gpa
-            h3= student.major
+            div(class="data-list")
+              h3= "Age: " + student.age
+              h3= "Home Address: " + student.address
+              h3= "GPA: " + student.gpa
+              h3= "Major: " + student.major
 </body>
 
 </html>

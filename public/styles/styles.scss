@@ -40,10 +40,9 @@ $gray: #3d7dca;
 
     .students-container {
       width: 350px;
-      background-color: tan;
 
         .profile {
-          margin: 0 auto;
+          margin: 2rem auto;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
@@ -51,16 +50,24 @@ $gray: #3d7dca;
         .avatar {
           margin: 0 auto;
           width: 150px;
-          background-color: magenta;
         }
 
         h2 {
+          padding: 0.5rem 0;
           text-align: center;
-          background-color: yellow;
+          letter-spacing: 0.07rem;
         }
 
-        h3 {
-          background-color: seashell;
+          .data-list {
+            margin: 0 auto;
+            padding: 0.5rem;
+            width: 250px;
+
+          h3 {
+            padding: 0.1rem;
+            font-size: 1rem;
+            letter-spacing: 0.07rem;
+          }
         }
       }
     }
