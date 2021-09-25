@@ -18,7 +18,14 @@
       h1 Student Directory
     div(class="app-container-inner")
       div(class="modify-container")
-        h1 Test
+        div(class="editor")
+          h2 Directory Editor 
+          div(class="choice-container")
+            h3 I want to: 
+            select
+              option add a student 
+              option edit a student
+              option remove a student
       div(class="students-container")
         for student in students
           div(class="profile")
