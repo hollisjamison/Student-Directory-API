@@ -1,2 +1,2 @@
 # Student-Directory
-A full CRUD REST API that retrieves a list of all students
+A full CRUD REST API that retrieves a list of all current students
