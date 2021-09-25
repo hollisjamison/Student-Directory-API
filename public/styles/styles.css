@@ -7,7 +7,14 @@
 .app-container {
   margin: 0 auto;
   width: 700px;
-  height: 100vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #dfe3ee;
 }
 
@@ -29,5 +36,54 @@
   font-size: 2rem;
   color: white;
   text-align: center;
+}
+
+.app-container-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.app-container-inner .modify-container {
+  width: 350px;
+  background-color: cyan;
+}
+
+.app-container-inner .students-container {
+  width: 350px;
+  background-color: tan;
+}
+
+.app-container-inner .students-container .profile {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.app-container-inner .students-container .profile .avatar {
+  margin: 0 auto;
+  width: 150px;
+  background-color: magenta;
+}
+
+.app-container-inner .students-container .profile h2 {
+  text-align: center;
+  background-color: yellow;
+}
+
+.app-container-inner .students-container .profile h3 {
+  background-color: seashell;
 }
 /*# sourceMappingURL=styles.css.map */

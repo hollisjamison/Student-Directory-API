@@ -16,9 +16,18 @@
   div(class="app-container")
     header
       h1 Student Directory
-    div(class="students-container")
-      for student in students
-        h2= student.name
+    div(class="app-container-inner")
+      div(class="modify-container")
+        h1 Test
+      div(class="students-container")
+        for student in students
+          div(class="profile")
+            h2= student.name
+            img(class="avatar" src="/assets/" + student.image)
+            h3= student.age
+            h3= student.address
+            h3= student.gpa
+            h3= student.major
 </body>
 
 </html>
