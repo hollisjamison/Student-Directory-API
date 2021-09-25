@@ -29,7 +29,7 @@ $blue: #3d7dca;
       color: white;
       letter-spacing: 0.1rem;
       text-align: center;
-      box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
     }
   }
 
@@ -46,6 +46,7 @@ $blue: #3d7dca;
         padding: 1rem 0;
         width: 325px;
         background-color: $gray;
+        letter-spacing: 0.07rem;
         box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 
         h2 {
@@ -57,7 +58,6 @@ $blue: #3d7dca;
         .choice-container {
           padding: 1rem;
           display: flex;
-          justify-content: center;
           align-items: center;
 
           label {
@@ -79,8 +79,48 @@ $blue: #3d7dca;
         }
 
         .input-container {
+          padding: 1rem;
+          width: 200px;
           display: flex;
           flex-direction: column;
+
+          label {
+            margin-bottom: 0.2rem;
+          }
+
+          input {
+            margin-bottom: 0.5rem;
+            padding: 0 0.5rem;
+            height: 2rem;
+            font-size: 1rem;
+            background: none;
+            border: none;
+            border-bottom: 2px solid black;
+          }
+        }
+
+        .submit-container {
+          padding: 0 1rem 0 0;
+          height: 3rem;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          button {
+            width: 150px;
+            height: 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+            transition-duration: 0.2s;
+
+            &:hover {
+              cursor: pointer;
+              color: white;
+              background-color: #ACACAC;
+            }
+          }
         }
 
       }
