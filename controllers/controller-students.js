@@ -32,9 +32,26 @@ const addNewStudent = async (req, res) => {
   }
 }
 
+const deleteStudent = async (req, res) => {
+  try {
+    const { name, age, address, gpa, major, image } = req.body
+
+    if (!name || !age || !address || !gpa || !major || !image) {
+      return res.send('Delete request called')
+    }
+
+    const deletedStudent = await models.Students.delete({ name, age, address, gpa, major, image })
+
+    return res.status(201).send(deletedStudent)
+  } catch (error) {
+    return res.status(500).send('HTTP Error 500 unable to handle this request')
+  }
+}
+
 module.exports = {
   errorFunction,
   renderAllStudents,
   getAllStudents,
-  addNewStudent
+  addNewStudent,
+  deleteStudent
 }

@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const { errorFunction, getAllStudents, renderAllStudents, addNewStudent } = require('./controllers/controller-students')
+const { errorFunction, getAllStudents, renderAllStudents, addNewStudent, deleteStudent } = require('./controllers/controller-students')
 
 const PORT = 1800
 const app = express()
@@ -9,10 +9,11 @@ app.set('view engine', 'pug')
 
 app.use(express.static('public'))
 
-app.get('/', renderAllStudents)
-app.get('/api', getAllStudents)
+app.get('/students', renderAllStudents)
 
-app.post('/api', bodyParser.json(), addNewStudent)
+app.get('/api/students', getAllStudents)
+app.post('/api/students', bodyParser.json(), addNewStudent)
+app.delete('/api/students', deleteStudent)
 
 app.get('*', errorFunction)
 
