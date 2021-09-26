@@ -13,7 +13,7 @@ app.get('/students', renderAllStudents)
 
 app.get('/api/students', getAllStudents)
 app.post('/api/students', bodyParser.json(), addNewStudent)
-app.delete('/api/students', deleteStudent)
+app.delete('/api/students/:id', deleteStudent)
 
 app.get('*', errorFunction)
 

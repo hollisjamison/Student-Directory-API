@@ -128,6 +128,14 @@
   border-bottom: 2px solid black;
 }
 
+.app-container-inner .modify-container .editor .delete {
+  display: none;
+}
+
+.app-container-inner .modify-container .editor .update {
+  display: none;
+}
+
 .app-container-inner .modify-container .editor .submit-container {
   padding: 0 1rem 0 0;
   height: 3rem;
