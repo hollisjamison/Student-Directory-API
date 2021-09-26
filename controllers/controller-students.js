@@ -16,8 +16,25 @@ const getAllStudents = async (req, res) => {
   return res.send(students)
 };
 
+const addNewStudent = async (req, res) => {
+  try {
+    const { name, age, address, gpa, major, image } = req.body
+
+    if (!name || !age || !address || !gpa || !major || !image) {
+      return res.send('All fields are required')
+    }
+
+    const newStudent = await models.Students.create({ name, age, address, gpa, major, image })
+
+    return res.status(201).send(newStudent)
+  } catch (error) {
+    return res.status(500).send('HTTP Error 500 unable to handle this request')
+  }
+}
+
 module.exports = {
   errorFunction,
   renderAllStudents,
-  getAllStudents
+  getAllStudents,
+  addNewStudent
 }

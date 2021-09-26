@@ -7,7 +7,7 @@ const Students = (connection, Sequelize) => {
     gpa: { type: Sequelize.DECIMAL(3, 2), allowNull: false },
     major: { type: Sequelize.STRING, allowNull: false },
     image: { type: Sequelize.STRING, allowNull: false }
-  })
+  }, { paranoid: true })
 }
 
 module.exports = Students
