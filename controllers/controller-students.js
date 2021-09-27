@@ -32,20 +32,21 @@ const addNewStudent = async (req, res) => {
   }
 }
 
-const deleteStudent = async (req, res) => {
-  try {
-    const { name, age, address, gpa, major, image } = req.body
+const deleteStudent = (req, res) => {
+  const id = req.params.id
 
-    if (!name || !age || !address || !gpa || !major || !image) {
-      return res.send('Delete request called')
-    }
+  models.Students.destroy({ where: { id: id } })
 
-    const deletedStudent = await models.Students.delete({ name, age, address, gpa, major, image })
-
-    return res.status(201).send(deletedStudent)
-  } catch (error) {
-    return res.status(500).send('HTTP Error 500 unable to handle this request')
-  }
+    .then(num => {
+      if (num == 1) {
+        res.send("Success");
+      } else {
+        res.send(`Invalid student ID: ${id}`);
+      }
+    })
+    .catch(err => {
+      res.status(500).send("HTTP Error 500 unable to handle this request");
+    });
 }
 
 module.exports = {
