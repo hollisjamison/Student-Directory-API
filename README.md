@@ -8,3 +8,4 @@ This API utilizes a MySQL database to store the student information, as well as 
 
 The following HTTP methods are implemented: GET, POST, PUT, DELETE.
 
+![Screenshot of student directory](public/assets/app-image.png)
