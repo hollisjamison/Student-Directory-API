@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const { errorFunction, getAllStudents, renderAllStudents, addNewStudent, deleteStudent } = require('./controllers/controller-students')
+const { errorFunction, getAllStudents, renderAllStudents, addNewStudent, updateStudent, deleteStudent } = require('./controllers/controller-students')
 
 const PORT = 1800
 const app = express()
@@ -14,6 +14,8 @@ app.get('/students', renderAllStudents)
 app.get('/api/students', getAllStudents)
 
 app.post('/api/students', bodyParser.json(), addNewStudent)
+
+app.put('/api/students/:id', bodyParser.json(), updateStudent)
 
 app.delete('/api/students/:id', deleteStudent)
 

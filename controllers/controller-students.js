@@ -32,21 +32,45 @@ const addNewStudent = async (req, res) => {
   }
 }
 
-const deleteStudent = (req, res) => {
-  const id = req.params.id
+const updateStudent = async (req, res) => {
+  try {
+    const { name, age, address, gpa, major, image } = req.body
+    const { id } = req.params
 
-  models.Students.destroy({ where: { id: id } })
+    if (!id || !name || !age || !address || !gpa || !major || !image) {
+      return res.status(401).send('Please include all fields: id, name, age, address, gpa, major, image')
+    }
 
-    .then(num => {
-      if (num == 1) {
-        res.send("Success");
-      } else {
-        res.send(`Invalid student ID: ${id}`);
-      }
-    })
-    .catch(err => {
-      res.status(500).send("HTTP Error 500 unable to handle this request");
-    });
+    const student = await models.Students.findOne({ where: { id } })
+
+    if (!student) return res.send(`Unable to update student #${id}, they do not exist in the database`)
+
+    const updatedStudent = await student.update({ name, age, address, gpa, major, image }, { returning: true })
+
+    res.status(200).json(updatedStudent)
+
+  } catch (error) {
+    console.log(error)
+    res.status(500).send("HTTP Error 500 unable to handle this request");
+  }
+}
+
+const deleteStudent = async (req, res) => {
+  try {
+
+    const id = req.params.id
+
+    const student = await models.Students.findOne({ where: { id } })
+
+    if (!student) return res.send(`Unable to delete student #${id}, they do not exist in the database`)
+
+    await student.destroy()
+
+    res.status(200).send(`Student ${id} deleted!`)
+
+  } catch (error) {
+    res.status(500).send("HTTP Error 500 unable to handle this request");
+  }
 }
 
 module.exports = {
@@ -54,5 +78,6 @@ module.exports = {
   renderAllStudents,
   getAllStudents,
   addNewStudent,
+  updateStudent,
   deleteStudent
 }
