@@ -61,7 +61,7 @@ POST - Adds a new student to the database. A new Student ID is created in sequen
 
 #### UPDATE METHOD
 
-http://localhost:1800/api/students/:id
+http://localhost:1800/api/students/000001
 
 UPDATE - Updates a student currently in the databse based on the Student ID # being used as the param.
 
@@ -82,7 +82,7 @@ All of these properties are required to update: name, age, address, gpa, major, 
 
 #### DELETE METHOD
 
-http://localhost:1800/api/students/:id
+http://localhost:1800/api/students/000001
 
 DELETE - Deletes a student currently in the databse by Student ID # (which is the param). The id # works both with or without leading zeros when used as the param.
 
