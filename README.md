@@ -2,7 +2,9 @@
 
 ### Work in progress
 
-#### UPDATE as of 09/28/21 The next feature to be added will be the API calls for the frontend form. All the API routes are fully functional with an API tester such as Postman. Data is returned in raw JSON format. See below for API documentation.
+#### UPDATE as of 09/28/21 Upcoming feature to be added will be the API calls for the frontend form. 
+
+#### ** All the API routes are fully functional with an API tester such as Postman. Data is returned in raw JSON format. See below for API documentation. **
 
 
 ## Objective
