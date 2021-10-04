@@ -5,6 +5,8 @@ const { errorFunction, getAllStudents, renderAllStudents, addNewStudent, updateS
 const PORT = 1800
 const app = express()
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.set('view engine', 'pug')
 
 app.use(express.static('public'))

@@ -18,7 +18,7 @@
       h1 Student Directory
     div(class="app-container-inner")
       div(class="modify-container")
-        form(class="editor")
+        form(class="editor add" action="/api/students" method="POST")
           h2 Directory Editor 
           div(class="choice-container")
             label I want to: 
@@ -28,15 +28,17 @@
               option(value="delete") remove a student
           div(class="input-container add")
             label(for="add-name") Name:
-            input(type="text" id="add-name")
+            input(type="text" id="add-name" name="name")
             label(for="add-age") Age:
-            input(type="number" step="1" min="14" max="100" id="add-age")
+            input(type="number" step="1" min="14" max="100" id="add-age" name="age")
             label(for="add-address") Home Address:
-            input(type="text" id="add-address")
+            input(type="text" id="add-address" name="address")
             label(for="add-gpa") GPA:
-            input(type="number" step="0.01" min="0" max="4.00" id="add-gpa")
+            input(type="number" step="0.01" min="0" max="4.00" id="add-gpa" name="gpa")
             label(for="add-major") Major:
-            input(type="text" id="add-major")
+            input(type="text" id="add-major" name="major")
+            label(for="add-image") Image:
+            input(type="text" id="add-image" name="image")
           div(class="input-container update")
             label(for="update-name") Name:
             input(type="text" id="update-name")
