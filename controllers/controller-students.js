@@ -22,7 +22,7 @@ const addNewStudent = async (req, res) => {
     const { name, age, address, gpa, major, image } = req.body
 
     if (!name || !age || !address || !gpa || !major || !image) {
-      return res.send('All fields are required')
+      return res.send('Addition failed. All fields are required')
     }
 
     await newStudent.create({ name, age, address, gpa, major, image })

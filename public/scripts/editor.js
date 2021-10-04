@@ -19,8 +19,4 @@ const changeEditor = () => {
   }
 }
 
-const redirect = () => {
-  window.location.href = "/students"
-}
-
-module.exports = { changeEditor, redirect }
+module.exports = changeEditor
