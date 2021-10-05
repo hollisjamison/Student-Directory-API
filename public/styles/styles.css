@@ -59,23 +59,21 @@
   background-color: #3d7dca;
 }
 
-.app-container-inner .modify-container .editor {
+.app-container-inner .modify-container .top-container {
   margin: 0 auto;
   padding: 1rem 0;
   width: 325px;
   background-color: #dfe3ee;
   letter-spacing: 0.07rem;
-  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-.app-container-inner .modify-container .editor h2 {
+.app-container-inner .modify-container .top-container h2 {
   margin-bottom: 1rem;
   text-align: center;
   letter-spacing: 0.07rem;
 }
 
-.app-container-inner .modify-container .editor .choice-container {
+.app-container-inner .modify-container .top-container .choice-container {
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,12 +83,12 @@
           align-items: center;
 }
 
-.app-container-inner .modify-container .editor .choice-container label {
+.app-container-inner .modify-container .top-container .choice-container label {
   margin-right: 0.5rem;
   font-weight: 500;
 }
 
-.app-container-inner .modify-container .editor .choice-container select {
+.app-container-inner .modify-container .top-container .choice-container select {
   padding: 0.5rem;
   font-size: 16px;
   font-weight: 500;
@@ -98,11 +96,26 @@
   background: none;
 }
 
-.app-container-inner .modify-container .editor .choice-container select:hover {
+.app-container-inner .modify-container .top-container .choice-container select:hover {
   cursor: pointer;
 }
 
-.app-container-inner .modify-container .editor .input-container {
+.app-container-inner .modify-container .addForm {
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 325px;
+  background-color: #dfe3ee;
+  letter-spacing: 0.07rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-container-inner .modify-container .addForm .input-container {
   padding: 1rem;
   width: 200px;
   display: -webkit-box;
@@ -114,11 +127,11 @@
           flex-direction: column;
 }
 
-.app-container-inner .modify-container .editor .input-container label {
+.app-container-inner .modify-container .addForm .input-container label {
   margin-bottom: 0.2rem;
 }
 
-.app-container-inner .modify-container .editor .input-container input {
+.app-container-inner .modify-container .addForm .input-container input {
   margin-bottom: 0.5rem;
   padding: 0 0.5rem;
   height: 2rem;
@@ -128,15 +141,7 @@
   border-bottom: 2px solid black;
 }
 
-.app-container-inner .modify-container .editor .delete {
-  display: none;
-}
-
-.app-container-inner .modify-container .editor .update {
-  display: none;
-}
-
-.app-container-inner .modify-container .editor .submit-container {
+.app-container-inner .modify-container .addForm .submit-container {
   padding: 0 1rem 0 0;
   height: 3rem;
   display: -webkit-box;
@@ -150,7 +155,7 @@
           align-items: center;
 }
 
-.app-container-inner .modify-container .editor .submit-container button {
+.app-container-inner .modify-container .addForm .submit-container button {
   width: 150px;
   height: 2rem;
   font-size: 1rem;
@@ -162,7 +167,141 @@
           transition-duration: 0.2s;
 }
 
-.app-container-inner .modify-container .editor .submit-container button:hover {
+.app-container-inner .modify-container .addForm .submit-container button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #ACACAC;
+}
+
+.app-container-inner .modify-container .updateForm {
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 325px;
+  background-color: #dfe3ee;
+  letter-spacing: 0.07rem;
+  display: none;
+}
+
+.app-container-inner .modify-container .updateForm .input-container {
+  padding: 1rem;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-container-inner .modify-container .updateForm .input-container label {
+  margin-bottom: 0.2rem;
+}
+
+.app-container-inner .modify-container .updateForm .input-container input {
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.app-container-inner .modify-container .updateForm .submit-container {
+  padding: 0 1rem 0 0;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container-inner .modify-container .updateForm .submit-container button {
+  width: 150px;
+  height: 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.app-container-inner .modify-container .updateForm .submit-container button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #ACACAC;
+}
+
+.app-container-inner .modify-container .deleteForm {
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 325px;
+  background-color: #dfe3ee;
+  letter-spacing: 0.07rem;
+  display: none;
+}
+
+.app-container-inner .modify-container .deleteForm .input-container {
+  padding: 1rem;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-container-inner .modify-container .deleteForm .input-container label {
+  margin-bottom: 0.2rem;
+}
+
+.app-container-inner .modify-container .deleteForm .input-container input {
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.app-container-inner .modify-container .deleteForm .submit-container {
+  padding: 0 1rem 0 0;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container-inner .modify-container .deleteForm .submit-container button {
+  width: 150px;
+  height: 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.app-container-inner .modify-container .deleteForm .submit-container button:hover {
   cursor: pointer;
   color: white;
   background-color: #ACACAC;
