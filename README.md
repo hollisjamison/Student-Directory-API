@@ -2,7 +2,7 @@
 
 ### Work in progress
 
-#### UPDATE as of 10/04/21 Upcoming feature to be added will be update and delete functionality from the frontend form.
+#### UPDATE as of 10/05/21 The last remaining feature to be added is the update method through the frontend form.
 
 #### ** All the API routes are fully functional with an API tester such as Postman. Data is returned in raw JSON format. See below for API documentation. **
 
