@@ -1,11 +1,13 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const { errorFunction, getAllStudents, renderAllStudents, addNewStudent, updateStudent, deleteStudent } = require('./controllers/controller-students')
+const { errorFunction, getAllStudents, renderAllStudents, addNewStudent, updateStudent, deleteStudent } = require('./controllers/controller-students');
+const methodOverride = require('method-override');
 
 const PORT = 1800
-const app = express()
 
+const app = express()
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(methodOverride('_method'));
 
 app.set('view engine', 'pug')
 

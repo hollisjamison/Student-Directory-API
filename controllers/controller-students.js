@@ -67,7 +67,7 @@ const deleteStudent = async (req, res) => {
 
     await student.destroy()
 
-    res.status(200).send(`Student ${id} deleted!`)
+    return res.status(200).redirect('/students')
 
   } catch (error) {
     res.status(500).send("HTTP Error 500 unable to handle this request");
