@@ -1,12 +1,5 @@
 # Student-Directory
 
-### Work in progress
-
-#### UPDATE as of 10/05/21 The last remaining feature to be added is the update method through the frontend form.
-
-#### ** All the API routes are fully functional with an API tester such as Postman. Data is returned in raw JSON format. See below for API documentation. **
-
-
 ## Objective
 The objective of this project was to create a full CRUD REST API for a student directory, as well as a frontend to render the information.
 
