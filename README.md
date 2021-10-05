@@ -42,13 +42,13 @@ http://localhost:1800/api/students
 POST - Adds a new student to the database. A new Student ID is created in sequential order.
 
     {
-        "id": 1,
-        "name": "Emily",
-        "age": 21,
-        "address": "Salem, MA",
-        "gpa": 3.8,
-        "major": "Biochemistry",
-        "image": "emily.svg",
+        "id": 13,
+        "name": "Robert",
+        "age": 23,
+        "address": "Miami, FL",
+        "gpa": 3.2,
+        "major": "Chemistry",
+        "image": "robert.svg",
         "createdAt": "2021-09-28T17:23:44.000Z",
         "updatedAt": "2021-09-28T18:09:56.885Z",
         "deletedAt": null
