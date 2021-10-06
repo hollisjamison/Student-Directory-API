@@ -10,7 +10,7 @@ The database contains a single table with 10 columns (id, name, age, address, gp
 
 The frontend of the application utilizes the Pug template-engine as well SCSS for styling. All images used are svgs saved within the assets folder of the repo.
 
-![Screenshot of student directory](public/assets/app-image.png)
+![Screen Capture GIF of student directory](public/assets/screen-capture.gif)
 
 ## API Documentation
 
