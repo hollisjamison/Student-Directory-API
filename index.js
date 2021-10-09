@@ -25,6 +25,6 @@ app.delete('/api/students/:id', deleteStudent)
 
 app.get('*', errorFunction)
 
-app.listen(PORT, () => {
-  console.log(`Listening on http://localhost:${PORT}`) // eslint-disable-line no-console
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`App listening on http://localhost:${PORT}`) // eslint-disable-line no-console
 })
