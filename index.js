@@ -13,7 +13,7 @@ app.set('view engine', 'pug')
 
 app.use(express.static('public'))
 
-app.get('/students', renderAllStudents)
+app.get('/', renderAllStudents)
 
 app.get('/api/students', getAllStudents)
 
